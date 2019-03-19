@@ -1,0 +1,80 @@
+  $backgroundColor: #99CC99;
+  $maxWidth: 1000px;
+  $minWidth: 750px;
+  $imageWidth: 100%;
+  $Fontface: 'Oswald', sans-serif;
+  $Fontcolor: white;
+  $p-color: #333333;
+  $Fontdecor: none;
+  $columns: 12;
+  $columnsWidth: 100% / $columns;
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .row{
+    margin-bottom: 15px;
+    &::after{
+      clear: both;
+      display: block;
+      content: '';
+    }
+  }
+
+  .col{
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  @for $i from 1 through $columns{
+    .col#{$i}{
+      width: $columnsWidth * $i;
+      }
+    .offset#{$i}{
+      margin-left: $columnsWidth * $i;
+      }
+    }
+
+  .pageContainer{
+    max-width: $maxWidth;
+    margin: 0 auto;
+  }
+
+  body{
+    background-color: $backgroundColor;
+  }
+
+  p{
+    color: $p-color;
+  }
+
+  #nav{
+
+  }
+
+  .nav_li{
+    font-family: $Fontface;
+    color: $Fontcolor;
+    font-size: 30px;
+
+    h3{
+      font-size: 30px;
+    }
+
+    a{
+      text-decoration: $Fontdecor;
+      color: $Fontcolor;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+
+  #logo{
+  
+  }
