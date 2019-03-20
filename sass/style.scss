@@ -1,0 +1,94 @@
+$backgroundColor: #99CC99;
+// $maxWidth: 1920px;
+$maxWidth: 100%;
+$minWidth: 750px;
+$imageWidth: 100%;
+$Fontface: 'Oswald', sans-serif;
+$FontcolorPrimary: white;
+$FontcolorSecondary:  #333333;
+$columns: 12;
+$columnsWidth: 100% / $columns;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row{
+  margin-bottom: 15px;
+  width: $maxWidth;
+  &::after{
+    clear: both;
+    display: block;
+    content: '';
+  }
+}
+
+.col{
+  float: left;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@for $i from 1 through $columns{
+  .col#{$i}{
+    width: $columnsWidth * $i;
+    }
+  .offset#{$i}{
+    margin-left: $columnsWidth * $i;
+    }
+  }
+
+.pageContainer{
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
+body{
+  background-color: black;
+}
+
+p{
+  color: $FontcolorSecondary;
+}
+
+header{
+width: 100%;
+height: 150px;
+}
+
+nav{
+width: 30%;
+height: 20vh;
+}
+
+nav li{
+  font-family: $Fontface;
+  color: $FontcolorPrimary;
+  font-size: 30px;
+  padding-right: 3%;
+  font-size: 30px;
+
+  p{
+    font-size: 30px;
+  }
+
+  a{
+    text-decoration: $FontcolorPrimary;
+    color: $FontcolorPrimary;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+#logo{
+  width: 50%;
+}
+
+#header_img{
+width: 100%;
+// padding-right: 50px;
+}
