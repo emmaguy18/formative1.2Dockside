@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.row {
+  margin-bottom: 15px;
+  width: 100%; }
+  .row::after {
+    clear: both;
+    display: block;
+    content: ''; }
+
+.col {
+  float: left;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col1 {
+  width: 8.3333333333%; }
+
+.offset1 {
+  margin-left: 8.3333333333%; }
+
+.col2 {
+  width: 16.6666666667%; }
+
+.offset2 {
+  margin-left: 16.6666666667%; }
+
+.col3 {
+  width: 25%; }
+
+.offset3 {
+  margin-left: 25%; }
+
+.col4 {
+  width: 33.3333333333%; }
+
+.offset4 {
+  margin-left: 33.3333333333%; }
+
+.col5 {
+  width: 41.6666666667%; }
+
+.offset5 {
+  margin-left: 41.6666666667%; }
+
+.col6 {
+  width: 50%; }
+
+.offset6 {
+  margin-left: 50%; }
+
+.col7 {
+  width: 58.3333333333%; }
+
+.offset7 {
+  margin-left: 58.3333333333%; }
+
+.col8 {
+  width: 66.6666666667%; }
+
+.offset8 {
+  margin-left: 66.6666666667%; }
+
+.col9 {
+  width: 75%; }
+
+.offset9 {
+  margin-left: 75%; }
+
+.col10 {
+  width: 83.3333333333%; }
+
+.offset10 {
+  margin-left: 83.3333333333%; }
+
+.col11 {
+  width: 91.6666666667%; }
+
+.offset11 {
+  margin-left: 91.6666666667%; }
+
+.col12 {
+  width: 100%; }
+
+.offset12 {
+  margin-left: 100%; }
+
+.pageContainer {
+  max-width: 100%;
+  margin: 0 auto; }
+
+body {
+  background-color: #99CC99; }
+
+header {
+  width: 100%;
+  height: 120px; }
+
+#header_img {
+  width: 100%; }
+
+#logo {
+  width: 25%;
+  margin-top: 2%;
+  margin-left: 4%; }
+
+nav {
+  width: 30%;
+  height: 7vh;
+  float: right;
+  margin-top: 3%;
+  margin-right: 4%; }
+
+nav li {
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 45px;
+  padding-right: 10%;
+  list-style-type: none;
+  text-shadow: 0.5px 0.5px 1px #333333; }
+  nav li a {
+    text-decoration: white;
+    color: white; }
+  nav li a:hover {
+    text-decoration: underline; }
+
+.header_button_border {
+  height: 20vh;
+  border: 5px white solid;
+  background-color: blue; }
+
+.header_button {
+  background-color: white;
+  width: 95%;
+  height: 15vh;
+  margin-top: 4%;
+  margin-left: 2%;
+  filter: alpha(opacity=50); }
+
+.header_button a {
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  color: white;
+  color: black;
+  opacity: 0; }
+
+p {
+  color: #333333; }
+
+/*# sourceMappingURL=style.css.map */
