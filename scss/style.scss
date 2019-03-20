@@ -3,8 +3,8 @@
   $minWidth: 750px;
   $imageWidth: 100%;
   $Fontface: 'Oswald', sans-serif;
-  $Fontcolor: white;
-  $p-color: #333333;
+  $FontcolorPrimary: white;
+  $FontcolorSecondary:  #333333;
   $Fontdecor: none;
   $columns: 12;
   $columnsWidth: 100% / $columns;
@@ -50,7 +50,7 @@
   }
 
   p{
-    color: $p-color;
+    color: $FontcolorSecondary;
   }
 
   #nav{
@@ -59,7 +59,7 @@
 
   .nav_li{
     font-family: $Fontface;
-    color: $Fontcolor;
+    color: $FontcolorPrimary;
     font-size: 30px;
 
     h3{
@@ -67,8 +67,8 @@
     }
 
     a{
-      text-decoration: $Fontdecor;
-      color: $Fontcolor;
+      text-decoration: $FontcolorPrimary;
+      color: $FontcolorPrimary;
     }
     a:hover{
       text-decoration: underline;
@@ -76,5 +76,5 @@
   }
 
   #logo{
-  
+
   }
